@@ -49,7 +49,7 @@ function drawRow(rowDepth, previousRow)
 	currentRow[previousRow.length].y = 10 + (rowDepth / (rows - 1)) * 546;
 	
 	for (var i = 0; i < previousRow.length - 1; ++i)
-    {
+	{
 		currentRow[i+1] = {};
 		currentRow[i+1].value = (previousRow[i].value + previousRow[i+1].value) % 10;
 		currentRow[i+1].x = currentRow[i].x + 10;
@@ -57,7 +57,7 @@ function drawRow(rowDepth, previousRow)
 	}
 	
 	for (var i = 0; i < currentRow.length; ++i)
-    {
+	{
 		if (currentRow[i].value % 2 == 0)
 			context.fillStyle = grey;
 		else
